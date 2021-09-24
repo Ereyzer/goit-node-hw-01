@@ -67,6 +67,7 @@ async function invokeAction({ action, id, name, email, phone }) {
 
 invokeAction(argv);
 
+//! it is my testing func I need it!!!
 // async function testFunc(params) {
 //   const result = await listContacts();
 //   const result = await removeContact(17);
