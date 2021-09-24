@@ -5,7 +5,9 @@ const contactsPath = path.join(__dirname, './db/contacts.json');
 
 // contacts.js
 
-// TODO: задокументировать каждую функцию
+// TODO: add description
+
+//* this if result is god func return list with contacts
 async function listContacts() {
   try {
     const result = await fs.readFile(contactsPath, 'utf8');
@@ -17,6 +19,7 @@ async function listContacts() {
   }
 }
 
+//* this if result is god func return object with contact info
 async function getContactById(contactId) {
   try {
     const contacts = await listContacts();
@@ -28,6 +31,7 @@ async function getContactById(contactId) {
   }
 }
 
+//* this if result is god func return empty object
 async function removeContact(contactId) {
   const contacts = await listContacts();
   const newContactList = contacts.filter(({ id }) => id !== contactId);
@@ -42,6 +46,7 @@ async function removeContact(contactId) {
   }
 }
 
+//* this if result is god func return object with new contact info
 async function addContact(name, email, phone) {
   const contacts = await listContacts();
   const newContact = {
