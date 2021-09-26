@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Ereyzer/goit-node-hw-01#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "commander": "^8.2.0"
+    "commander": "^8.2.0",
+    "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
